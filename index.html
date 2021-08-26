@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="3">
+    <title>QR Code</title>
+
+    <style type="text/css">
+          body {
+            background: linear-gradient(90deg, hsla(239, 100%, 67%, 1) 0%, hsla(187, 100%, 89%, 1) 100%);
+          }
+          .container {
+          /* Full screen overlay */
+          height: 100%;
+          left: 0;
+          position: fixed;
+          top: 0;
+          width: 100%;
+
+          /* Center the content */
+          align-items: center;
+          display: flex;
+          justify-content: center;
+
+      }
+
+      .container__close {
+          /* Shown at top right corner */
+          position: absolute;
+          right: 16px;
+          top: 16px;
+      }
+      img {
+        border-style:  dashed;
+        border-color: #deaaff;
+        border-radius: 4em;
+        border-width: 5px;
+        min-width: 300px;
+        max-width: 500px;
+        min-height: 300px;
+        max-height: 500px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- The close button -->
+      <button class="container__close">x</button>
+
+      <!-- The navigation menu -->
+      <ul>
+        <img src="./qrcode_result.png" />
+      </ul>
+    </div>
+  </body>
+</html>
